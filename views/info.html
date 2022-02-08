@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{@title}}</title>
 </head>
 <body>
+    <h1>{{@title}}</h1>
+    <h2>I like {{@color}}</h2>
+
+    <ul>
+        <repeat group="{{@fruits}}" value="{{@fruit}}">
+            <li>{{@fruit}}</li>
+        </repeat>
+    </ul>
+
+    <h3>Dessert Options</h3>
+    <repeat group="{{@desserts}}" key="{{@key}}"
+            value="{{@value}}">
+        <input type="checkbox" value={{@key}}">{{@value}}<br>
+    </repeat>
+
+    <h3>Color Options</h3>
+    <repeat group="{{@colors}}" value="{{@color}}">
+        <label><input type="radio" name="colors" value={{@color}}">{{@color}}</label><br>
+    </repeat>
+
 
 </body>
 </html>
