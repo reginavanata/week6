@@ -1,0 +1,14 @@
+{
+  "name": "tostrander/328/week6",
+  "description": "My Week 6 Project",
+  "license": "open source",
+  "authors": [
+    {
+      "name": "Regina Vanata",
+      "email": "vanata.regina@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
